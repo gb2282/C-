@@ -1,0 +1,6 @@
+major difference between structure and class are:-
+1.class supports inheritance structure does not.
+2.class contain all type of constructer but structure have only parameterised.
+3.class there are 3 access modifiers but structure elements are public.
+4.class supports object creation structure doesnt.
+5.class overall give greater functionality structure is limited.

@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class A {
+    int objNo;
+    static int c;
+public:
+    A()
+    {objNo = ++c;
+    }
+    ~A()
+    { --c;
+    }
+    void printObjNumber(void)
+    { cout << "object number :" << objNo << "\n";
+    }
+    static void printObjCount(void)
+    {cout << "count:" << c<< "\n";
+    }
+};
+int A::c;
+int main()
+{
+    A t1, t2;
+    A::printObjCount();
+    A t3;
+    A::printObjCount();
+    t1.printObjNumber(); 
+    t2.printObjNumber(); 
+    t3.printObjNumber();
+    return 0;
+}
